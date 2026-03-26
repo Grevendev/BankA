@@ -31,7 +31,8 @@ The program then goes through three modes:
 - `bankomatService.cs` – bankomat state and operations
 - `Card.cs` – card information and PIN check
 - `Account.cs` – account balance, withdrawals and deposit
-Köra projektet
-Krav: .NET SDK med stöd för net10.0.
+
+Run the project
+Requirement: .NET SDK with support for net10.0.
 
 dotnet run
