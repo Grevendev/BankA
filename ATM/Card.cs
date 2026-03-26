@@ -1,25 +1,11 @@
-namespace ATM;
-
 public class Card
 {
-    public string CardNumber { get; }
-    public string PinCode { get; }
+    public string Pin { get; }
     public Account Account { get; }
 
-    public Card(string cardNumber, string pinCode, Account account)
+    public Card(string pin, Account account)
     {
-        CardNumber = cardNumber;
-        PinCode = pinCode;
+        Pin = pin;
         Account = account;
-    }
-
-    public bool MatchesPin(string pinCode)
-    {
-        return PinCode == pinCode;
-    }
-
-    public bool ValidatePin(string inputPin)
-    {
-        return inputPin == PinCode;
     }
 }

@@ -1,17 +1,9 @@
-namespace ATM.ATM.Tests;
-
-using ATM;
-using Xunit;
-
-public class AccountTest
+public class AccountTests
 {
   [Fact]
-  public void GetBalanceTest()
+  public void Account_ShouldStoreBalance()
   {
-    // setup
-    Account account = new Account(5000);
-
-    // test
-    Assert.Equal(5000, account.GetBalance());
+    var account = new Account(5000);
+    Assert.Equal(5000, account.Balance);
   }
 }

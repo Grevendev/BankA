@@ -1,29 +1,9 @@
-namespace ATM;
-
 public class Account
 {
-  public int Balance { get; private set; }
+  public int Balance { get; set; }
 
-  public Account(int initialBalance)
+  public Account(int balance)
   {
-    Balance = initialBalance;
+    Balance = balance;
   }
-
-  public int GetBalance()
-  {
-    return Balance;
-  }
-
-  public bool Withdraw(int amount)
-  {
-    Balance -= amount;
-    return true;
-  }
-
-  public bool Deposit(int amount)
-  {
-    Balance += amount;
-    return true;
-  }
-
 }
