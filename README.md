@@ -1,4 +1,4 @@
-This is a small C# console project that simulates a simple bankomat.
+This is a small C# console project that simulates a simple ATM.
 The user can insert a card, enter a PIN, view the balance, withdraw money, deposit money, and eject the card.
 
 ## Features
